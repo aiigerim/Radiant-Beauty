@@ -1,1 +1,1 @@
-# Radiant-Beauty
+# Radiant-Beauty-әшекей-бұйым интернет магазині

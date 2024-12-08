@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Әшекейлер каталогы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2; /* Светло-розовый фон */
+        }
+                }
+        header {
+            background-color: #ffc0cb;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #ff69b4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #d1006f; /* Яркий розовый при наведении */
+        }
+
+        .list-menu__block-submenu {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .block-submenu__column-header {
+            font-size: 30px;
+            font-weight: bold;
+            color: #d1006f; /* Яркий розовый */
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .block-submenu__list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .list-submenu__item {
+            margin: 10px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .list-submenu__link {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .list-submenu__link:hover {
+            color: #d1006f;
+            transform: scale(1.05);
+        }
+
+        .category-image {
+            width: 250px;
+            height: 250px;
+            margin: 10px auto;
+            border-radius: 15px;
+            background-color: #ffc0cb; /* Нежно-розовый */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .category-image:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+            padding: 20px 0;
+            background-color: #ff69b4;
+            border-top: 2px solid #d1006f;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+
+    <!-- Навигационное меню -->
+    <nav>
+        <a href="index.html">Басты бет</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">Біз туралы</a>
+        <a href="contacts.html">Контактілер</a>
+    </nav>
+
+    <!-- Список категорий -->
+    <div class="list-menu__block-submenu">
+        <div class="block-submenu__column">
+            <div class="block-submenu__column-header">Әшекей түрлері</div>
+            <ul class="list-submenu block-submenu__list">
+                <li class="list-submenu__item">
+                    <a class="list-submenu__link" href="necklace.html">
+                        <div class="category-image">
+                            <img src="https://style.pibig.info/uploads/posts/2023-03/1680000877_style-pibig-info-p-eksklyuzivnie-zolotie-tsepochki-zhenskie-p-1.jpg" alt="Колье">
+                        </div>
+                        <span lang="kk">Алқа</span>
+                    </a>
+                </li>
+                <li class="list-submenu__item">
+                    <a class="list-submenu__link" href="pendant.html">
+                        <div class="category-image">
+                            <img src="https://www.pirkums.lv/userfiles/untums/6c5d41ebc168ca4f6eabc3a1282da12b.JPG" alt="Подвески">
+                        </div>
+                        <span lang="kk">Кулон</span>
+                    </a>
+                </li>
+                <li class="list-submenu__item">
+                    <a class="list-submenu__link" href="bracelet.html">
+                        <div class="category-image">
+                            <img src="https://www.alltime.ru/obj/catalog/jewellary/silver-wings/img/big/24SZ0188GP-194.jpg" alt="Цепочки">
+                        </div>
+                        <span lang="kk">Білезік</span>
+                    </a>
+                </li>
+                <li class="list-submenu__item">
+                    <a class="list-submenu__link" href="earring.html">
+                        <div class="category-image">
+                            <img src="https://ae01.alicdn.com/kf/A0230859f713542528f69e4a28befe0403.jpg" alt="Миниатюрные элементы">
+                        </div>
+                        <span lang="kk">Сырға</span>
+                    </a>
+                </li>
+                <li class="list-submenu__item">
+                    <a class="list-submenu__link" href="hour.html">
+                        <div class="category-image">
+                            <img src="https://i.pinimg.com/236x/fb/b6/b6/fbb6b6108e31179805b62580b9f90fd1.jpg" alt="Подвеска">
+                        </div>
+                        <span lang="kk">Сағат</span>
+                    </a>
+                </li>
+                <li class="list-submenu__item">
+                    <a class="list-submenu__link" href="ring.html">
+                        <div class="category-image">
+                            <img src="https://massaget.kz/userdata/news/news_58047/image_l.jpg" alt="Подвеска">
+                        </div>
+                        <span lang="kk">Сақина</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        © 2024 Әшекейлер дүкені. Барлық құқықтар қорғалған.
+    </footer>
+
+</body>
+</html>

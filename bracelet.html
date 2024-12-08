@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Білезіктер каталог</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffb6c1; /* Розовый цвет */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: #ff69b4; /* Розовый */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #ff1493;
+        }
+        .catalog {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            color: #ff69b4;
+        }
+        .product p {
+            font-size: 14px;
+            color: #555;
+        }
+        .cart {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cart h2 {
+            text-align: center;
+            color: #ff69b4;
+        }
+        .contact {
+            background-color: #ffb6c1;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            color: white;
+        }
+        footer {
+            background-color: #ffb6c1;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .favorite-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            color: #bbb; /* Белый цвет */
+            transition: color 0.3s;
+        }
+        .favorite-btn.active {
+            color: red; /* Красный цвет для избранных товаров */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Білезіктер каталогі</h1>
+</header>
+
+<div class="navbar">
+    <a href="#catalog">Каталог</a>
+    <a href="#cart">Себет</a>
+    <a href="#contact">Байланыс</a>
+</div>
+
+<div id="catalog" class="catalog">
+    <div class="product">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTyNlTsSQ1ZPn87EANcoBqIfQAY2Ie53Eo1aubKjRNMiqB4UyC4krLdEpVpvD3sw72hHG-QrFqnqJ3zH0BCProIJUElzAc55OTTekWsjJ6O7ZWyfYEJaqw9oBqtJnWz3Ab1XuMztx4&usqp=CAc" alt="Білезік 1">
+        <h3>Тастарлы білезік</h3>
+        <p>450 000 тг</p>
+        <button>Себетке қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко -->
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTaRJhLFdQm6GO8UTRDN8tdGDVhHzyw7d3Hz1csDAM2dh1PqHHjJSTjQXela5D7JMF1gJBNWQ3Yq3hyi6j6e3WBf-oMjZrAqLC4sTaGQyIrpll3NlS7xbnkerCbAVm98A45mZmvTqU&usqp=CAc" alt="Білезік 2">
+        <h3>Сары алтын білезік</h3>
+        <p>278 000 тг</p>
+        <button>Себетке қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко -->
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQGW6K0qTbBdd3ocJdDJkSO-h34DBlxmVc_cxN7WgHk4-sBfLg9FXJYjQZTtlqHEHTToeK1-B5nfKmr2aQccA9IzanBG6CGT-vLDM5_P0qtYV2_IXN3v1nfJGAXP0RGTOndl0akqA&usqp=CAc" alt="Білезік 3">
+        <h3>Жүрекше пішініндегі ілмектері бар әдемі білезік.</h3>
+        <p>158 000 тг<p>
+        <button>Себетке қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко -->
+    </div>
+       <div class="product">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSzmV8pZHNjFgn2zwny-DPjCyJXIKALdZ_ae4f1dLk97Szvk6SUWZbDZ0Lh6_1v1epcHfaSCNO9AEEg2lafKRUNgT6owAQmnefMwxhStDSAWRA0cZmJdg-7lpK9WaZmJDY5TkILh2s&usqp=CAc" alt="Білезік 3">
+        <h3>Iлмектері бар әдемі білезік.</h3>
+        <p>175 000 тг<p>
+        <button>Себетке қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко -->
+    </div>
+    <!-- Басқа тауарларды осында қосуға болады -->
+</div>
+
+<div id="cart" class="cart">
+    <h2>Сіздің себетіңіз</h2>
+    <p>Тауарлар осында қосылғаннан кейін көрсетіледі.</p>
+    <p><strong>Жалпы сома:</strong> 0 тг.</p>
+    <button>Тапсырыс беру</button>
+</div>
+
+<div id="contact" class="contact">
+    <h2>Дүкеніміздің байланыс деректері</h2>
+    <p>Мекен-жайымыз: Алматы  қаласы, Абылайхана көшесі, 1</p>
+    <p>Телефон: +7 707 596 9707</p>
+    <p>Email: contact@shop.com</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Әйелдерге арналған алқа дүкені</p>
+</footer>
+
+<script>
+    // Функция для добавления товара в избранное
+    document.querySelectorAll('.favorite-btn').forEach(function(button) {
+        button.addEventListener('click', function() {
+            button.classList.toggle('active'); // Переключаем класс "active", который изменяет цвет
+        });
+    });
+</script>
+
+</body>
+</html>

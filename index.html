@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин украшений</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Подключение Font Awesome -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        header {
+            background-color: #ffc0cb;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #ffb6c1;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffe4e1;
+        }
+        .hero h2 {
+            color: #ff69b4;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            text-align: center;
+            background-color: #ffebef;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product h3 {
+            color: #ff1493;
+        }
+        footer {
+            background-color: #ffc0cb;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Әйелдерге арналған әшекейлер</h1>
+        <p>Біздің әшекейлерімізбен күн сайын жарқыраңыз</p>
+    </header>
+
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Басты бет</a> <!-- Иконка басты бет -->
+        <a href="catalog.html"><i class="fas fa-folder-open"></i> Каталог</a> <!-- Иконка каталог -->
+        <a href="about.html"><i class="fas fa-info-circle"></i> Біз туралы</a> <!-- Иконка біз туралы -->
+        <a href="contacts.html"><i class="fas fa-phone-alt"></i> Контактілер</a> <!-- Иконка контактілер -->
+        <a href="register.html"><i class="fas fa-user-plus"></i> Тіркелу</a> <!-- Иконка тіркелу -->
+        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Кіру</a> <!-- Иконка кіру -->
+        <a href="profile.html"><i class="fas fa-user"></i> Профиль</a> <!-- Иконка профиль -->
+    </nav>
+
+    <div class="hero">
+        <h2>Сіз үшін ең жақсы әшекейлер!</h2>
+        <p>Талғампаз стиль және ерекше дизайн</p>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <img src="https://www.bee-gold.com/photo/plugin/article/2020/1593952921_1-org.jpg" alt="Алқа">
+            <h3>Алқа</h3>
+            <p>300 000 тг</p>
+        </div>
+        <div class="product">
+            <img src="https://mobius-luxury.eu/image/cache/catalog/2_Chopard_Jewellery/857482-5623/857482-5623_01_00-500x500.jpg" alt="Білезік">
+            <h3>Білезік</h3>
+            <p>350 000 тг</p>
+        </div>
+        <div class="product">
+            <img src="https://images.satu.kz/169413251_w600_h600_169413251.jpg" alt="Сырға">
+            <h3>Сырға</h3>
+            <p>200 000 тг</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Зергерлік бұйымдар дүкені. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+</body>
+</html>

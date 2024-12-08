@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тіркелу және кіру</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .form-container h2 {
+            color: #d63384;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #d63384;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #bf2a74;
+        }
+        .link {
+            display: block;
+            margin-top: 10px;
+            color: #d63384;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Тіркелу</h2>
+        <form action="register_process.html" method="POST">
+            <label for="name">Аты-жөні</label>
+            <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+
+            <label for="email">Электрондық почта</label>
+            <input type="email" id="email" name="email" required placeholder="Введите вашу электронную почту">
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" required placeholder="Введите пароль">
+
+            <label for="confirm-password">Құпия сөзді растау</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Повторите пароль">
+
+            <button type="submit">Тіркелу</button>
+        </form>
+        <p class="login-link">Тіркелгіңіз әлдеқашан бар ма? <a href="login.html" class="link">Кіру</a></p>
+    </div>
+</body>
+</html>

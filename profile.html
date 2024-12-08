@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менің профилім - Әшекейлер дүкені</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2;
+            color: #333;
+        }
+        header {
+            background-color: #d1006f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            text-align: center;
+            font-size: 24px;
+            color: #d1006f;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .profile-info p,
+        .cart ul li,
+        .orders ul li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .profile-info strong {
+            color: #d1006f;
+        }
+        .cart ul, .orders ul {
+            list-style: none;
+            padding: 0;
+        }
+        .cart ul li, .orders ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart .total, .orders .status {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #d1006f;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Әшекейлер дүкені - Менің профилім</h1>
+</header>
+
+<div class="container">
+
+    <!-- Профиль -->
+    <div class="section profile-info">
+        <h2>Пайдаланушы профилі</h2>
+        <p><strong>Аты:</strong> Айжан Қанатқызы</p>
+        <p><strong>Электронды пошта:</strong> aijan@example.com</p>
+        <p><strong>Мекенжай:</strong> Қарағанды, Абай көшесі, 45</p>
+    </div>
+
+    <!-- Корзина -->
+    <div class="section cart">
+        <h2>Себет</h2>
+        <ul>
+            <li>Гауһар жүзік - 50,000 тг</li>
+            <li>Інжу сырға - 15,000 тг</li>
+            <li>Алтын білезік - 20,000 тг</li>
+        </ul>
+        <div class="total">
+            <p>Жиыны: 85,000 тг</p>
+        </div>
+    </div>
+
+    <!-- Тапсырыстар -->
+    <div class="section orders">
+        <h2>Менің тапсырыстарым</h2>
+        <ul>
+            <li>Тапсырыс №001: Гауһар жүзік - <span class="status">Өңделуде</span></li>
+            <li>Тапсырыс №002: Алтын білезік - <span class="status">Жеткізілді</span></li>
+            <li>Тапсырыс №003: Інжу сырға - <span class="status">Төленді</span></li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>Бізбен байланыс:</strong> support@example.com</p>
+    <p>Барлық құқықтар қорғалған © 2024</p>
+</footer>
+
+</body>
+</html>

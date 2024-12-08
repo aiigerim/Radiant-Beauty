@@ -1,0 +1,26 @@
+ <div class="block-submenu list-menu__block-submenu">
+                                                                    <!-- column-->
+                                    <div class="block-submenu__column">
+                                        <div class="block-submenu__column-inner">
+                                            <div class="block-submenu__column-header">Тип</div>
+                                            <ul class="list-submenu block-submenu__list">
+                                                                                                    <li class="list-submenu__item">
+                                                        <a class="list-submenu__link" href="/catalog/kole-i-kulony/kole/"><span lang="kz" >Колье</span><span lang="ru" >Колье</span></a>
+                                                    </li>
+                                                                                                    <li class="list-submenu__item">
+                                                        <a class="list-submenu__link" href="/catalog/kole-i-kulony/kulony/"><span lang="kz" >Подвески</span><span lang="ru" >Подвески</span></a>
+                                                    </li>
+                                                                                                    <li class="list-submenu__item">
+                                                        <a class="list-submenu__link" href="/catalog/kole-i-kulony/tsepochka/"><span lang="kz" >Цепочки</span><span lang="ru" >Цепочки</span></a>
+                                                    </li>
+                                                                                                    <li class="list-submenu__item">
+                                                        <a class="list-submenu__link" href="/catalog/kole-i-kulony/miniatyurnye-elementy/"><span lang="kz" >Миниатюрные элементы</span><span lang="ru" >Миниатюрные элементы</span></a>
+                                                    </li>
+                                                                                                    <li class="list-submenu__item">
+                                                        <a class="list-submenu__link" href="/catalog/kole-i-kulony/podveska/"><span lang="kz" >Подвеска</span><span lang="ru" >Подвеска</span></a>
+                                                    </li>
+                                                                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    

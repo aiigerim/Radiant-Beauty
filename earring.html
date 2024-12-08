@@ -1,0 +1,173 @@
+<<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сырға каталогі</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffb6c1; /* Розовый цвет */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: #ff69b4; /* Розовый */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #ff1493;
+        }
+        .catalog {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            color: #ff69b4;
+        }
+        .product p {
+            font-size: 14px;
+            color: #555;
+        }
+        .cart {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cart h2 {
+            text-align: center;
+            color: #ff69b4;
+        }
+        .contact {
+            background-color: #ffb6c1;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            color: white;
+        }
+        footer {
+            background-color: #ffb6c1;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .favorite-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            color: #bbb; /* Белый цвет для не избранного */
+            transition: color 0.3s;
+        }
+        .favorite-btn.active {
+            color: red; /* Красный цвет для избранного */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Сырға каталогі</h1>
+</header>
+
+<div class="navbar">
+    <a href="#catalog">Каталог</a>
+    <a href="#cart">Себет</a>
+    <a href="#contact">Байланыс</a>
+</div>
+
+<div id="catalog" class="catalog">
+    <div class="product">
+        <img src="https://pandora.kz/upload/app/imageoptimizer/606/kyx40doi0pz9hrr7smyiyjzkvsoog4yw.webp" alt="Сырға 1">
+        <h3>Таспен сырға</h3>
+        <p>74 000 тг</p>
+        <button>Себетке қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко -->
+    </div>
+    <div class="product">
+        <img src="https://pandora.kz/upload/app/imageoptimizer/9f0/rj6ytyzwvnj3nwfyqi10l1u109nopp6m.webp" alt="Сырға 2">
+        <h3>Жүрекше түріндегі сырға</h3>
+        <p>100 000 тг </p>
+        <button>Себетке қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко -->
+    </div>
+    <div class="product">
+        <img src="https://zoloto55.kz/upload/cssinliner_webp/iblock/eaf/v4ynti4zr8x8hy0y8l2w3pfpsagekv8z.webp" alt="Сырға 3">
+        <h3>Алтын сырға ерекше үлгіде </h3>
+        <p>250 000 тг</p>
+        <button>Себетке қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко -->
+    </div>
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8wRQv562BETTpshYSyW4B3Zmd9SLlmJ_-9g&s" alt="Сырға 4">
+        <h3>Алтын сырға ьрилиант тастарымен</h3>
+        <p>175 000 тг </p>
+        <button>Себетке қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко -->
+    </div>
+    <!-- Басқа тауарларды осында қосыңыз -->
+</div>
+
+<div id="cart" class="cart">
+    <h2>Сіздің себетіңіз</h2>
+    <p>Тауарлар осында қосылғаннан кейін көрсетіледі.</p>
+    <p><strong>Жалпы сома:</strong> 0 теңге.</p>
+    <button>Тапсырыс беру</button>
+</div>
+
+<div id="contact" class="contact">
+    <h2>Біздің дүкеннің байланыстары</h2>
+    <p>Біздің мекен-жайымыз: Алматы қ., Абылайхана көшесі, 1</p>
+    <p>Телефон: +7 707 596 9707</p>
+    <p>Email: contact@shop.com</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Әйелдерге арналған сырға дүкені</p>
+</footer>
+
+<script>
+    // Функция для добавления товара в избранное
+    document.querySelectorAll('.favorite-btn').forEach(function(button) {
+        button.addEventListener('click', function() {
+            button.classList.toggle('active'); // Переключаем класс "active", который изменяет цвет
+        });
+    });
+</script>
+
+</body>
+</html>

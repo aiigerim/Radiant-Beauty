@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алқалар каталогы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffb6c1; /* Розовый цвет */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: #ff69b4; /* Розовый */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #ff1493;
+        }
+        .catalog {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            color: #ff69b4;
+        }
+        .product p {
+            font-size: 14px;
+            color: #555;
+        }
+        .cart {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cart h2 {
+            text-align: center;
+            color: #ff69b4;
+        }
+        .contact {
+            background-color: #ffb6c1;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            color: white;
+        }
+        footer {
+            background-color: #ffb6c1;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .favorite-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            color: #bbb; /* Белый цвет для не избранного */
+            transition: color 0.3s;
+        }
+        .favorite-btn.active {
+            color: red; /* Красный цвет для избранного */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Алқалар каталогі</h1>
+</header>
+
+<div class="navbar">
+    <a href="#catalog">Каталог</a>
+    <a href="#cart">Корзина</a>
+    <a href="#contact">Контакты</a>
+</div>
+
+<div id="catalog" class="catalog">
+    <div class="product">
+        <img src="https://static.alltime.ru/obj/article/image-blog/samoe_prochnoe_pletenie/samoe_prochnoe_pletenie_2.jpg" alt="Украшение 1">
+        <h3>Алқа</h3>
+        <p>250.000 тг</p>
+        <button>Корзинаға қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко для избранного -->
+    </div>
+    <div class="product">
+        <img src="https://ae04.alicdn.com/kf/U882ca70345a441b8a523cb533f17725c2.jpg_480x480.jpg" alt="Украшение 2">
+        <h3>Алқа</h3>
+        <p>300.000 тг</p>
+        <button>Корзинаға қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко для избранного -->
+    </div>
+    <div class="product">
+        <img src="https://style.pibig.info/uploads/posts/2023-03/1679111977_style-pibig-info-p-zolotaya-tsepochka-s-krestikom-zhenskie-in-54.jpg" alt="Украшение 3">
+        <h3>Алқа</h3>
+        <p>250.500 тг</p>
+        <button>Корзинаға қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко для избранного -->
+    </div>
+    <div class="product">
+        <img src="https://images.prom.ua/2835155580_w600_h600_2835155580.jpg" alt="Украшение 3">
+        <h3>Алқа</h3>
+        <p>250.500 тг</p>
+        <button>Корзинаға қосу</button>
+        <button class="favorite-btn">&#9825;</button> <!-- Сердечко для избранного -->
+    </div>
+
+    <!-- Басқа өнімдерді осында қосыңыз -->
+</div>
+
+<div id="cart" class="cart">
+    <h2>Сіздің корзинаңыз</h2>
+    <p>Тауарлар осы жерде көрсетіледі.</p>
+    <p><strong>Жалпы сома:</strong> 0 тг.</p>
+    <button>Тапсырыс беру</button>
+</div>
+
+<div id="contact" class="contact">
+    <h2>Біздің дүкеннің байланыстары</h2>
+    <p>Мекенжай: Қала көшесі, 1, Алматы</p>
+    <p>Телефон: +7 707 596 9707</p>
+    <p>Email: contact@shop.com</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Әйелдерге арналған алқа дүкені</p>
+</footer>
+
+<script>
+    // Функция для добавления товара в избранное
+    document.querySelectorAll('.favorite-btn').forEach(function(button) {
+        button.addEventListener('click', function() {
+            button.classList.toggle('active'); // Переключаем класс "active", который изменяет цвет
+        });
+    });
+</script>
+
+</body>
+</html>

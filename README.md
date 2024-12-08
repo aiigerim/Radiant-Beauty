@@ -14,7 +14,7 @@
 
 1. Репозиторийді клонирлеу:
     ```bash
-    git clone https://github.com/your-username/leelly.git
+    git clone https://github.com/aiigerim/Radiant-Beauty.git
     ```
 
 2. Қажетті тәуелділіктерді орнату:
